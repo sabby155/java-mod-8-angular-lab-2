@@ -1,0 +1,25 @@
+<!-- Enter name of the application: <input type="text" [(ngModel)]="title"/>
+<h1>{{ title }}</h1>
+<p>Number of messages = {{ messages.length}}</p>
+
+<div>
+  <button 
+  [disabled]="disabledNewMessage" 
+  (click)="onSendMessage()"
+  >Send Message</button>
+</div>
+
+<p>First message is from {{messages[0].sender}}: {{messages[0].message}}</p>
+<div>
+  <ul>
+    <li *ngFor="let message of messages">
+      {{message.sender}}: {{message.message}}
+    </li>
+  </ul>
+</div> -->
+
+<p>
+  <span *ngFor="let athlete of athletes">
+   * {{athlete.name}} ({{athlete.sport}}) is <span *ngIf="!athlete.active">not active</span><span *ngIf="athlete.active">active</span>
+  </span>
+</p>
